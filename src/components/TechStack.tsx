@@ -10,6 +10,7 @@ const technologies = [
   { name: 'Git', iconClass: 'devicon-git-plain colored' },
   { name: 'GitHub', iconClass: 'devicon-github-original' },
   { name: 'Vite', iconClass: 'devicon-vitejs-plain colored' },
+  { name: 'Vercel', iconClass: 'devicon-vercel-original' },
 ]
 
 function TechStack() {

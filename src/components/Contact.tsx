@@ -49,7 +49,7 @@ function Contact() {
         }}
       >
         <a
-          href="https://github.com/"
+          href="https://github.com/RubenEduardoG"
           target="_blank"
           rel="noreferrer"
           style={{
@@ -63,7 +63,7 @@ function Contact() {
         </a>
 
         <a
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/rub%C3%A9n-eduardo-gutierrez/"
           target="_blank"
           rel="noreferrer"
           style={{
@@ -77,7 +77,7 @@ function Contact() {
         </a>
 
         <a
-          href="mailto:tuemail@gmail.com"
+          href="rubengutierrezdv@gmail.com"
           style={{
             padding: '14px 22px',
             borderRadius: '999px',
