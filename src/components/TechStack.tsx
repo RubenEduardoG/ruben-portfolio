@@ -19,7 +19,6 @@ function TechStack() {
       <div className="stack-container">
         <p className="stack-kicker">Stack</p>
 
-        <h2 className="stack-title">Tecnologías con las que trabajo</h2>
 
         <p className="stack-description">
           Estas son algunas de las herramientas y tecnologías que fui usando en

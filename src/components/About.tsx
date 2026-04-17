@@ -20,15 +20,6 @@ function About() {
         Sobre mí
       </p>
 
-      <h2
-        style={{
-          fontSize: 'clamp(2rem, 4vw, 3rem)',
-          marginBottom: '20px',
-        }}
-      >
-        Perfil profesional
-      </h2>
-
       <p
         style={{
           maxWidth: '750px',

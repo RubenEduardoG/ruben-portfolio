@@ -40,14 +40,6 @@ function Projects() {
         Proyectos
       </p>
 
-      <h2
-        style={{
-          fontSize: 'clamp(2rem, 4vw, 3rem)',
-          marginBottom: '16px',
-        }}
-      >
-        Trabajo reciente
-      </h2>
 
       <p
         style={{
