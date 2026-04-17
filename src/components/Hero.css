@@ -6,7 +6,7 @@
 }
 
 .hero-kicker {
-  color: #38bdf8;
+  color: var(--blue-accent);
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -24,13 +24,13 @@
 
 .hero-role {
   font-size: clamp(1.2rem, 3vw, 2rem);
-  color: #c4b5fd;
+  color: var(--title-accent);
   font-weight: 700;
 }
 
 .hero-role-note {
   font-size: 1rem;
-  color: #94a3b8;
+  color: var(--text-soft);
   font-weight: 500;
   margin-top: -10px;
 }
@@ -70,9 +70,15 @@
 }
 
 .btn-secondary {
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  color: #e5f0ff;
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  background: var(--card-bg);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.12);
 }
 
 .btn-secondary:hover {
@@ -107,4 +113,37 @@
   .btn-outline {
     text-align: center;
   }
+}
+body.light .btn-secondary {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(100, 116, 139, 0.28);
+  color: #0f172a;
+}
+
+body.light .btn-secondary:hover {
+  box-shadow: 0 0 16px rgba(2, 132, 199, 0.12);
+}
+.cursor {
+  display: inline-block;
+  color: var(--blue-accent);
+  animation: blink 1s infinite;
+  line-height: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hero-title-inline {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: nowrap;
 }

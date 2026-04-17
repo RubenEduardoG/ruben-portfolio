@@ -11,7 +11,7 @@ function Contact() {
     >
       <p
         style={{
-          color: '#38bdf8',
+          color: 'var(--blue-accent)',
           textTransform: 'uppercase',
           letterSpacing: '2px',
           marginBottom: '12px',
@@ -32,7 +32,7 @@ function Contact() {
       <p
         style={{
           maxWidth: '700px',
-          color: '#94a3b8',
+          color: 'var(--text-soft)',
           lineHeight: 1.8,
           marginBottom: '28px',
         }}
@@ -55,8 +55,8 @@ function Contact() {
           style={{
             padding: '14px 22px',
             borderRadius: '999px',
-            border: '1px solid rgba(148, 163, 184, 0.2)',
-            background: 'rgba(255,255,255,0.03)',
+            border: '1px solid var(--card-border)',
+            background: 'var(--card-bg)',
           }}
         >
           GitHub
@@ -69,8 +69,8 @@ function Contact() {
           style={{
             padding: '14px 22px',
             borderRadius: '999px',
-            border: '1px solid rgba(148, 163, 184, 0.2)',
-            background: 'rgba(255,255,255,0.03)',
+            border: '1px solid var(--card-border)',
+            background: 'var(--card-bg)',
           }}
         >
           LinkedIn
@@ -81,8 +81,8 @@ function Contact() {
           style={{
             padding: '14px 22px',
             borderRadius: '999px',
-            border: '1px solid rgba(56, 189, 248, 0.3)',
-            color: '#38bdf8',
+            border: '1px solid var(--card-border)',
+            color: 'var(--blue-accent)',
           }}
         >
           Email

@@ -11,7 +11,7 @@ function About() {
     >
       <p
         style={{
-          color: '#38bdf8',
+          color: 'var(--blue-accent)',
           textTransform: 'uppercase',
           letterSpacing: '2px',
           marginBottom: '12px',
@@ -32,7 +32,7 @@ function About() {
       <p
         style={{
           maxWidth: '750px',
-          color: '#94a3b8',
+          color: 'var(--text-soft)',
           lineHeight: 1.8,
           fontSize: '1.05rem',
         }}

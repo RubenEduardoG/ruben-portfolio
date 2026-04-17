@@ -1,15 +1,29 @@
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TechStack from './components/TechStack'
 import About from './components/About'
-import Projects from './components/Proyects'
+import Projects from './components/Projects'
 import Contact from './components/Contact'
 
-
 function App() {
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+
+  useEffect(() => {
+    document.body.classList.remove('light')
+
+    if (theme === 'light') {
+      document.body.classList.add('light')
+    }
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
 
       <main>
         <section
@@ -23,6 +37,7 @@ function App() {
         >
           <Hero />
         </section>
+
         <TechStack />
         <About />
         <Projects />

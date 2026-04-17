@@ -1,4 +1,9 @@
-function Navbar() {
+type NavbarProps = {
+  theme: 'dark' | 'light'
+  toggleTheme: () => void
+}
+
+function Navbar({ theme, toggleTheme }: NavbarProps) {
   return (
     <header
       style={{
@@ -6,8 +11,9 @@ function Navbar() {
         top: 0,
         zIndex: 1000,
         backdropFilter: 'blur(14px)',
-        background: 'rgba(5, 8, 22, 0.7)',
-        borderBottom: '1px solid rgba(148, 163, 184, 0.12)',
+        background: 'var(--nav-bg)',
+        borderBottom: '1px solid var(--nav-border)',
+        transition: 'all 0.3s ease',
       }}
     >
       <nav
@@ -19,6 +25,7 @@ function Navbar() {
           alignItems: 'center',
           justifyContent: 'space-between',
           gap: '20px',
+          flexWrap: 'wrap',
         }}
       >
         <a
@@ -36,25 +43,31 @@ function Navbar() {
           style={{
             display: 'flex',
             flexWrap: 'wrap',
+            alignItems: 'center',
             gap: '18px',
-            color: '#94a3b8',
+            color: 'var(--text-soft)',
             fontSize: '0.95rem',
           }}
         >
-<a
-  href="#sobre-mi"
-  style={{ transition: '0.2s' }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.color = '#38bdf8'
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.color = '#94a3b8'
-  }}
->
-  Sobre mí
-</a>
+          <a href="#stack">Stack</a>
+          <a href="#sobre-mi">Sobre mí</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#contacto">Contacto</a>
+
+          <button
+            onClick={toggleTheme}
+            style={{
+              border: '1px solid var(--card-border)',
+              background: 'var(--card-bg)',
+              color: 'var(--text-main)',
+              padding: '10px 14px',
+              borderRadius: '999px',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+            }}
+          >
+            {theme === 'dark' ? '☀️ Claro' : '🌙 Oscuro'}
+          </button>
         </div>
       </nav>
     </header>

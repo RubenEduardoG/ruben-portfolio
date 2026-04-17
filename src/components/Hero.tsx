@@ -3,9 +3,14 @@ import './Hero.css'
 function Hero() {
   return (
     <section id="hero" className="hero">
-      <p className="hero-kicker">Portfolio 2026</p>
+      <p className="hero-kicker">Disponible para oportunidades junior</p>
 
-      <h1 className="hero-title">Rubén Gutiérrez</h1>
+      <h1 className="hero-title">
+  <span className="hero-title-inline">
+    Rubén Gutierrez
+    <span className="cursor">|</span>
+  </span>
+</h1>
 
       <h2 className="hero-role">Frontend Developer Jr</h2>
 
@@ -26,9 +31,15 @@ function Hero() {
           Contacto
         </a>
 
-        <a href="/cv-ruben.pdf" className="btn-outline">
-          Descargar CV
-        </a>
+  <a
+  href="/cv-ruben-gutierrez.pdf"
+  className="btn-outline"
+  download
+  target="_blank"
+  rel="noreferrer"
+>
+  Descargar CV
+</a>
       </div>
     </section>
   )
