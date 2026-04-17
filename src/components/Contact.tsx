@@ -20,14 +20,6 @@ function Contact() {
         Contacto
       </p>
 
-      <h2
-        style={{
-          fontSize: 'clamp(2rem, 4vw, 3rem)',
-          marginBottom: '20px',
-        }}
-      >
-        Hablemos
-      </h2>
 
       <p
         style={{
