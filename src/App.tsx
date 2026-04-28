@@ -1,49 +1,25 @@
-import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import TechStack from './components/TechStack'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Skills from './pages/Skills'
+import Contact from './pages/Contact'
+import './App.css'
 
 function App() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
-
-  useEffect(() => {
-    document.body.classList.remove('light')
-
-    if (theme === 'light') {
-      document.body.classList.add('light')
-    }
-  }, [theme])
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
-  }
-
   return (
-    <>
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
+    <BrowserRouter>
+      <Navbar />
 
-      <main>
-        <section
-          style={{
-            minHeight: '100vh',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '40px 20px',
-          }}
-        >
-          <Hero />
-        </section>
-
-        <TechStack />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre-mi" element={<About />} />
+        <Route path="/proyectos" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contacto" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
