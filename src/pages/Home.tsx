@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import { Folder, User, Download } from 'lucide-react'
-
 
 function Home() {
   return (
@@ -24,8 +24,8 @@ function Home() {
           </p>
 
           <div className="hero-buttons">
-            <a href="/projects.tsx"><Folder size={20} /> Ver proyectos</a>
-            <a href="/about.tsx"><User size={20} /> Sobre mí</a>
+            <Link to="/proyectos"><Folder size={20} /> Ver proyectos</Link>
+            <Link to="/sobre-mi"><User size={20} /> Sobre mí</Link>
             <a href="/cv-ruben-full-stack.pdf" download><Download size={20} /> Descargar CV</a>
           </div>
         </div>
