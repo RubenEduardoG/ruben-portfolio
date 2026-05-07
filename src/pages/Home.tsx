@@ -24,8 +24,8 @@ function Home() {
           </p>
 
           <div className="hero-buttons">
-            <a href="/proyectos"><Folder size={20} /> Ver proyectos</a>
-            <a href="/sobre-mi"><User size={20} /> Sobre mí</a>
+            <a href="/projects.tsx"><Folder size={20} /> Ver proyectos</a>
+            <a href="/about.tsx"><User size={20} /> Sobre mí</a>
             <a href="/cv-ruben-full-stack.pdf" download><Download size={20} /> Descargar CV</a>
           </div>
         </div>
