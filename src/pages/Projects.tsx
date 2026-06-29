@@ -14,6 +14,37 @@ function Projects() {
         </p>
 
         <div className="projects-grid">
+          <article className="project-card featured-project">
+            <div className="project-image">
+              <img src="/martita.png" alt="Proyecto Lo de Martita" />
+            </div>
+
+            <div className="project-content">
+              <span className="project-tag freelance-tag">
+                Proyecto Freelance / Cliente real
+              </span>
+
+              <h2>Lo de Martita</h2>
+
+              <p>
+                Aplicación web desarrollada para una rotisería con modalidad
+                delivery y take away. Permite visualizar productos por
+                categorías, armar pedidos y facilitar el contacto del cliente
+                con el comercio.
+              </p>
+
+              <div className="project-buttons">
+                <a
+                  href="https://rotiseria-lo-de-martita.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver sitio
+                </a>
+              </div>
+            </div>
+          </article>
+
           <article className="project-card">
             <div className="project-image">
               <img src="/dydplegados.jpeg" alt="Proyecto DyD Plegados" />
@@ -29,10 +60,18 @@ function Projects() {
               </p>
 
               <div className="project-buttons">
-                <a href="https://dydplegados.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://dydplegados.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Ver sitio
                 </a>
-                <a href="https://github.com/RubenEduardoG/80790" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/RubenEduardoG/80790"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               </div>
@@ -53,10 +92,18 @@ function Projects() {
               </p>
 
               <div className="project-buttons">
-                <a href="https://coconutblis.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://coconutblis.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Ver sitio
                 </a>
-                <a href="https://github.com/RubenEduardoG/coconup" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/RubenEduardoG/coconup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               </div>
