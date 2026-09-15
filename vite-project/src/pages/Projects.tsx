@@ -50,6 +50,42 @@ function Projects() {
           <article className="project-card">
             <div className="project-image">
               <img
+                src="/victeacher-ingles.png"
+                alt="VE English Teacher - Landing page para profesora de inglés"
+              />
+            </div>
+
+            <div className="project-content">
+              <span className="project-tag">React + Tailwind CSS + Formspree</span>
+              <h2>VE English Teacher</h2>
+              <p>
+                Landing page para profesora de inglés enfocada en captación de
+                alumnos, agendamiento de entrevistas sin cargo y consulta de
+                modalidades y niveles.
+              </p>
+
+              <div className="project-buttons">
+                <a
+                  href="https://victeacherve.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo En Vivo
+                </a>
+                <a
+                  href="https://github.com/RubenEduardoG/proyecto-idiomas-clases"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article className="project-card">
+            <div className="project-image">
+              <img
                 src="/lisi-carpintera.png"
                 alt="Lisi Carpintería - Landing Page y Galería Interactiva"
               />
